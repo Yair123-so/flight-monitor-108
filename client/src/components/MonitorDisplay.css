@@ -1,0 +1,116 @@
+.monitor {
+  background: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.monitor-header {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+/* TEXT — כחול, VISUAL — ירוק, active שניהם עם גוון כהה יותר */
+.mode-btn {
+  padding: 9px 26px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: white;
+  transition: filter 0.15s;
+}
+
+.mode-btn.text-btn         { background: #2196F3; }
+.mode-btn.text-btn.active  { background: #1565C0; }
+.mode-btn.visual-btn       { background: #4CAF50; }
+.mode-btn.visual-btn.active{ background: #2E7D32; }
+
+.mode-btn:hover { filter: brightness(0.9); }
+
+/* + — כתום עגול */
+.add-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #FF5722;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+  transition: filter 0.15s;
+}
+.add-btn:hover { filter: brightness(0.9); }
+
+/* תצוגה ויזואלית */
+.visual-display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: white;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  padding: 20px 16px;
+}
+
+/* תצוגת טקסט */
+.text-display {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px 10px;
+  background: white;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+}
+
+.text-card {
+  border-radius: 50%;
+  width: 160px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+
+/* כל כרטיס עם צבע border שונה */
+.text-card.altitude-card { border: 3px solid #F44336; }
+.text-card.his-card      { border: 3px solid #2196F3; }
+.text-card.adi-card      { border: 3px solid #FFC107; }
+
+.card-label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.card-value {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 4px;
+  color: #222;
+}
+
+.no-data {
+  text-align: center;
+  padding: 50px;
+  color: #888;
+  font-size: 16px;
+  direction: rtl;
+}
